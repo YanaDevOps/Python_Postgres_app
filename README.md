@@ -1,8 +1,13 @@
 # Python PostgreSQL App
 
+![Python](https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=ffffff)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=ffffff)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=ffffff)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=ffffff)
+
 This is a sample project using Flask that demonstrates how to use a PostgreSQL database to store and display a list of users.
 
-## Description
+## 📋 Description
 
 The application connects to a PostgreSQL database and retrieves data from the `users` table, displaying it in an HTML table format.
 
@@ -13,7 +18,7 @@ The application connects to a PostgreSQL database and retrieves data from the `u
 - PostgreSQL
 - Docker
 
-## Installation and Running
+## 🚀 Start of work
 
 ### Prerequisites
 
@@ -38,9 +43,37 @@ The application connects to a PostgreSQL database and retrieves data from the `u
    http://localhost:5000/
    ```
 
+## 📂 Project structure
+   ```bash
+   Python_Postgres_app/ 
+   ├── Dockerfile 
+   ├── docker-compose.yml 
+   ├── init.sql 
+   ├── requirements.txt 
+   └── app.py
+   ```
+
+## Functionality 🌟
+
+- Connects to a PostgreSQL database.
+- Retrieves user data from the `users` table.
+- Displays the list of users in an HTML table format.
+
+## Technology 💻
+
+- **Python**: The programming language used for the backend.
+- **Flask**: The web framework for building the web application.
+- **PostgreSQL**: The database management system for storing user data.
+- **Docker**: Containerization platform to easily manage dependencies and environment.
+
 ## Database Initialization File
 The init.sql file contains SQL commands for creating the database and the users table.
 
 ### Customization
 - Replace `<YOUR_REPOSITORY_URL>` and `<PROJECT_FOLDER_NAME>` with the actual values.
 - Add any additional information you think is necessary, such as usage instructions or contribution guidelines.
+
+## 👤 Author
+Name: Yana Lysenko
+
+GitHub: [YanaDevOps](https://github.com/YanaDevOps)
