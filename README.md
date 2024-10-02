@@ -1,9 +1,9 @@
 # Python PostgreSQL App
 
-![Python](https://img.shields.io/badge/Python-3.9-3776AB?style=flat&logo=python&logoColor=ffffff)
-![Flask](https://img.shields.io/badge/Flask-1.1.2-000000?style=flat&logo=flask&logoColor=ffffff)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.0-336791?style=flat&logo=postgresql&logoColor=ffffff)
-![Docker](https://img.shields.io/badge/Docker-ready-2496ED?style=flat&logo=docker&logoColor=ffffff)
+![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
+![Flask](https://img.shields.io/badge/Flask-1.1.2-green.svg)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.0-blue.svg)
+![Docker](https://img.shields.io/badge/Docker-ready-blue.svg)
 
 This is a sample project using Flask that demonstrates how to use a PostgreSQL database to store and display a list of users.
 
