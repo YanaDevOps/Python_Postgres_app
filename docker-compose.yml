@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    networks:
+      - app_network
+    command: sh -c "while ! pg_isready -h db -U admin; do sleep 1; done; python app.py"
+
+  db:
+    image: postgres:13.0
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=adminpass
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h localhost -U admin"]
+      interval: 20s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
+    networks:
+      - app_network
+
+networks:
+  app_network:
+
+volumes:
+  db_data:
